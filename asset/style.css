@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    margin-left: 1em;
+}
+
+ul{
+    display: inline-block;
+    list-style: none;
+    margin: 0 1.25rem;
+}
+
+table{
+    border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* inizio nav bar */
+
+nav{
+    background-color: blue;
+    color: white;
+    height: 7vh;
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0
+}
+
+nav ul{
+    display: none;
+}
+
+.button-li{
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: white;
+    color: blue;
+
+}
+
+
+/* inizio 5 cards */
+
+.container-5-cards{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card{
+    flex-basis: 100%;
+    background-color: aqua;
+    padding: 1.5rem;
+    padding-bottom: 0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card1{
+    flex-basis: 100%;
+    background-color: aqua;
+    padding: 1.5rem;
+    padding-bottom: 0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card2{
+    flex-basis: 100%;
+    background-color: aqua;
+    padding: 1.5rem;
+    padding-bottom: 0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.container-5-cards h3{
+    color: blue;
+    margin: 1.2rem
+}
+
+.card p{
+    margin: 1.2rem
+}
+
+.button-5-cards{
+    background-color: blue;
+    color: white;
+    margin: 1.2rem;
+    border-radius: 40px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: block;
+    margin-right: 4rem;
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin-bottom: 0;
+}
+
+.container-5-cards i{
+    text-align: center;
+    font-size: 6rem;
+    display: block;
+    color: blue;
+
+}
+
+.text-align{
+    text-align: center;
+}
+
+/* fine 5 cards */
+
+/* stategic plan */
+
+.container-strategic{
+    display: flex;
+    padding: 2rem;
+    background-color: blueviolet;
+    margin-top: 3rem;
+    flex-direction: column;
+}
+
+.container-strategic h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-strategic h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container-strategic img{
+    width: 100%;
+}
+
+.sp-card1{
+    color: white;
+}
+
+.sp-card2{
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sp-card2 span{
+    margin-top: 1rem;
+    background-color: blueviolet;
+    border-radius: 50%;
+    padding: 1rem 1.3rem;
+    display: inline-block
+}
+
+/* fine stategic plan */
+
+/* testimonials */
+
+.testimonial-container{
+    text-align: center;
+    padding-top: 4rem;
+    padding: 2rem;
+}
+
+.testimonial-container h2{
+    color: blueviolet;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.t-cards-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.t-cards{
+    background-color: blueviolet;
+    color: white;
+    padding: 2rem;
+    border-radius: 50px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.t-cards p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.img-s{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-position: -48px center;
+    display: block;
+    background-image: url(img/testimonial1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.img-s2{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-position: -48px center;
+    display: block;
+    background-image: url(img/testimonial2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.img-s3{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-position: -48px center;
+    display: block;
+    background-image: url(img/testimonial3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+/* ###################################################### */
+
+/* medie query */
+
+/* ###################################################### */
+
+@media only screen and (min-width: 992px) {
+
+    /* nav */
+    nav ul{
+        display: inline;
+    }
+
+    nav ul li{
+        display: inline;
+    }
+
+    /* 5 cards */
+
+    .container-5-cards{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .card1 img{
+        height: 100%;
+        width: 18rem;
+    }
+
+    .card1{
+        display: flex;
+    }
+
+    .card1 h3{
+        margin-left: 0;
+    }
+
+    .button-5-cards{
+        margin-left: 0;
+        margin-right: 0rem;
+    }
+
+    /* strategic plan */
+
+    .container-strategic{
+        flex-direction: row;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-top: 3rem;
+        justify-content: space-between;
+    }
+
+    .sp-card2{
+        margin-top: 8rem;
+        flex-basis: 48%;
+    }
+    .sp-card1{
+        margin-top: 3rem;
+        flex-basis: 48%;
+    }
+
+    .container-strategic h2 {
+        margin-top: 7rem;
+        margin-bottom: 4rem;
+    }
+    
+    /* testimonials */
+    
+    .testimonial-container{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
+    .t-cards{
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .t-cards p{
+        padding: 1rem
+    }
+
+    .t-cards span{
+        padding: 1rem
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* 5 cards */
+    .container-5-cards{
+        justify-content: space-between;
+    }
+
+    .card1{
+        flex-basis: 64.67%
+    }
+
+    .card{
+        flex-basis: 31%;
+    }
+
+    /* testimonials */
+
+    .t-cards{
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .t-cards p{
+        padding: 1rem
+    }
+
+    .t-cards span{
+        padding: 1rem
+    }
+
+}
