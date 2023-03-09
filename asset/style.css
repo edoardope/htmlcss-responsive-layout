@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 li{
@@ -20,20 +21,47 @@ table{
 
 a{
     text-decoration: none;
+    transition: 0.3s;
 }
+
+a:hover{
+    filter: opacity(10%)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 /* inizio nav bar */
 
+.nav-bg{
+    background-color: rgba(0,132,253,255);
+    height: 7vh;
+    width: 100%;
+}
+
+#one{
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(0,132,253,255);
+    opacity: 70%;
+    transition: 0.3s;
+    position: fixed;
+    z-index: 9999;
+}
+
 nav{
-    background-color: blue;
     color: white;
     height: 7vh;
     display: flex;
     padding: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+}
+
+header:hover #one {
+    opacity: 100%;
 }
 
 nav ul{
@@ -42,13 +70,15 @@ nav ul{
 
 li a{
     color: white;
+    opacity: 100%;
 }
 
 #button-li{
     padding: 8px 12px;
     border-radius: 6px;
     background-color: white;
-    color: blue;
+    color: rgba(0,132,253,255);
+    opacity: 100%;
 
 }
 
@@ -62,11 +92,12 @@ li a{
     padding-top: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 9rem;
 }
 
 .card{
     flex-basis: 100%;
-    background-color: aqua;
+    background-color: rgba(181,221,255,255);
     padding: 1.5rem;
     padding-bottom: 0;
     border-radius: 10px;
@@ -75,7 +106,7 @@ li a{
 
 .card1{
     flex-basis: 100%;
-    background-color: aqua;
+    background-color: rgba(181,221,255,255);
     padding: 1.5rem;
     padding-bottom: 0;
     border-radius: 10px;
@@ -84,7 +115,7 @@ li a{
 
 .card2{
     flex-basis: 100%;
-    background-color: aqua;
+    background-color: rgba(181,221,255,255);
     padding: 1.5rem;
     padding-bottom: 0;
     border-radius: 10px;
@@ -92,8 +123,10 @@ li a{
 }
 
 .container-5-cards h3{
-    color: blue;
-    margin: 1.2rem
+    color: rgba(0,132,253,255);
+    margin: 1.2rem;
+    margin-left: 0rem;
+    font-size: 1.5rem;
 }
 
 .card p{
@@ -101,7 +134,7 @@ li a{
 }
 
 .button-5-cards{
-    background-color: blue;
+    background-color: rgba(0,132,253,255);
     color: white;
     margin: 1.2rem;
     border-radius: 40px;
@@ -122,12 +155,18 @@ img{
     text-align: center;
     font-size: 6rem;
     display: block;
-    color: blue;
+    color: rgba(0,132,253,255);
 
 }
 
 .text-align{
     text-align: center;
+}
+
+.container-5-cards .card1 i{
+    font-size: 1rem;
+    display: inline;
+    color: white;
 }
 
 /* fine 5 cards */
@@ -137,7 +176,7 @@ img{
 .container-strategic{
     display: flex;
     padding: 2rem;
-    background-color: blueviolet;
+    background-color: rgba(151,146,228,255);
     margin-top: 3rem;
     flex-direction: column;
 }
@@ -145,11 +184,13 @@ img{
 .container-strategic h2{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .container-strategic h3{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .container-strategic img{
@@ -170,7 +211,7 @@ img{
 
 .sp-card2 span{
     margin-top: 1rem;
-    background-color: blueviolet;
+    background-color: rgba(151,146,228,255);
     border-radius: 50%;
     padding: 1rem 1.3rem;
     display: inline-block
@@ -187,9 +228,10 @@ img{
 }
 
 .testimonial-container h2{
-    color: blueviolet;
+    color: rgba(151,146,228,255);
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-size: 2.5rem;
 }
 
 .t-cards-container{
@@ -198,7 +240,7 @@ img{
 }
 
 .t-cards{
-    background-color: blueviolet;
+    background-color: rgba(151,146,228,255);
     color: white;
     padding: 2rem;
     border-radius: 50px;
@@ -251,7 +293,7 @@ img{
 /* benefit of working whit us */
 
 .benefit-container{
-    background-color: blueviolet;
+    background-color: rgba(151,146,228,255);
     padding: 2rem;
 }
 
@@ -259,6 +301,7 @@ img{
     color: white;
     margin-top: 1rem;
     margin-bottom: 3rem;
+    font-size: 2.5rem;
 }
 
 .b-cards-container{
@@ -277,19 +320,21 @@ img{
 }
 
 .b-card h2{
-    color: blueviolet;
+    color: rgba(151,146,228,255);
     margin-bottom: 1rem;
+    font-size: 5rem;
 }
 
 .b-card span{
-    color: blueviolet;
+    color: rgba(151,146,228,255);
     display: block;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .b-card a{
     color: white;
-    background-color: blueviolet;
+    background-color: rgba(151,146,228,255);
     display: block;
     margin-top: 1rem;
     border-radius: 20px;
@@ -315,8 +360,9 @@ img{
 }
 
 .about-card h2{
-    color: blueviolet;
+    color: rgba(151,146,228,255);
     margin-bottom: 2rem;
+    font-size: 5rem;
 }
 
 .about-card p{
@@ -337,7 +383,7 @@ img{
 }
 
 .img-about span{
-    color: blueviolet;
+    color: rgba(151,146,228,255);
     font-size: 7rem;
     position: relative;
     left: 70%;
@@ -345,18 +391,78 @@ img{
 }
 
 .text-purple{
-    color: blueviolet;
+    color: rgba(151,146,228,255);
     display: block;
     margin-top: 10rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .about-card2 a{
     padding: 0.5rem;
     color: white;
-    background-color: blueviolet;
+    background-color: rgba(151,146,228,255);
     border-radius: 15px;
+}
+
+/* get started */
+
+.get-started-container{
+    background-color: rgba(151,146,228,255);
+    padding: 2rem;
+    text-align: center;
+}
+
+.get-started-container span{
+    color: white;
+    display: block;
+    margin: 2rem;
+}
+
+.get-started-container h3{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.get-started-container h2{
+    color: rgba(253,193,95,255);
+    margin: 2rem;
+    font-size: 5rem;
+}
+
+.get-started-container p{
+    color: white;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.get-started-button{
+    padding: 1rem;
+    border-radius: 20px;
+    color: rgba(151,146,228,255);
+    background-color: white;
+}
+
+.get-started-container span a{
+    color: white;
+    text-decoration-line: underline;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+footer p{
+    display: block;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
 }
 
 
@@ -369,6 +475,12 @@ img{
 @media only screen and (min-width: 992px) {
 
     /* nav */
+
+    nav{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
     nav ul{
         display: inline;
     }
@@ -463,6 +575,20 @@ img{
         padding-left: 15%;
         padding-right: 15%;
     }
+
+    /* get started */
+
+    .get-started-container p{
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    /* footer */
+
+    footer{
+        padding-left: 30%;
+        padding-right: 30%; 
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -510,6 +636,64 @@ img{
 
     .about-card2{
         flex-basis: 38%;
+    }
+
+     /* get started */
+
+    .get-started-container p{
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    /* footer */
+
+    footer{
+        padding-left: 30%;
+        padding-right: 30%; 
+    }
+
+}
+
+@media only screen and (min-width: 1441px) {
+
+    nav{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .container-5-cards{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .container-strategic{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .testimonial-container{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .benefit-container{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .about-us-container{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .get-started-container {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    footer{
+        padding-left: 30%;
+        padding-right: 30%; 
     }
 
 }
